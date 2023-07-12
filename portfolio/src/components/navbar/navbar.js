@@ -8,7 +8,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 50) {
         setIsNavAffix(true);
       } else {
         setIsNavAffix(false);
@@ -43,16 +43,16 @@ export default function Navbar() {
         <div id='mainListDiv' className={`main_list ${isMenuActive ? 'show_list' : ''}`}>
         <ul className='nav-links'>
           <li>
-            <Link to='/' onClick={closeMenu}>home</Link>
+            <Link to='/' onClick={closeMenu}>HOME</Link>
           </li>
           <li>
-            <Link to='/projects' onClick={closeMenu}>projects</Link>
+            <Link to='/projects' onClick={closeMenu}>PROJECTS</Link>
           </li>
           <li>
-            <Link to='/contact' onClick={closeMenu}>contact</Link>
+            <Link to='/about' onClick={closeMenu}>ABOUT</Link>
           </li>
           <li>
-            <Link to='/about' onClick={closeMenu}>about</Link>
+            <Link to='/contact' onClick={closeMenu}>CONTACT</Link>
           </li>
         </ul>
         </div>

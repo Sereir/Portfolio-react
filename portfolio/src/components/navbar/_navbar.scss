@@ -18,7 +18,9 @@ body {
     text-align: center;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
-    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 10;
 }
 
 .nav div.logo {
@@ -41,7 +43,7 @@ body {
 }
 
 .nav div.logo .mainlogo:hover {
-    background: red;
+    background: hsl(44, 80%, 47%);
 }
 
 
@@ -74,7 +76,7 @@ body {
 }
 
 .nav div.main_list ul li a:hover {
-    color: red;
+    color: hsl(44, 80%, 47%);
 }
 
 /* Home section */

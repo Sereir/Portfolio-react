@@ -8,11 +8,13 @@ import Home from './pages/home/home';
 import Contact from './pages/contact/contact';
 // import components
 import Navbar from './components/navbar/navbar';
+import UpArrow from './components/uparrow/uparrow';
 
 function App() {
   return (
     <Router>
       <Navbar />
+      <UpArrow />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='about' element={<About />} />
