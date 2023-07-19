@@ -49,6 +49,9 @@ export default function Navbar() {
             <Link to='/projects' onClick={closeMenu}>PROJECTS</Link>
           </li>
           <li>
+            <Link to='/articles' onClick={closeMenu}>ARTICLES</Link>
+          </li>
+          <li>
             <Link to='/about' onClick={closeMenu}>ABOUT</Link>
           </li>
           <li>

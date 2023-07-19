@@ -9,6 +9,8 @@ import Contact from './pages/contact/contact';
 // import components
 import Navbar from './components/navbar/navbar';
 import UpArrow from './components/uparrow/uparrow';
+import ArticlesList from './pages/articleslist/articleslist';
+import Article from './pages/article/article'
 
 function App() {
   return (
@@ -18,8 +20,12 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='about' element={<About />} />
-        <Route path='projects' element={<Experience/>} />
+        <Route path='projects' element={<Experience />} />
+        <Route path='articles' element={<ArticlesList />} />
+        {/* Add a nested route for individual articles */}
+        <Route path='articles/:slug' element={<Article />} />
         <Route path='contact' element={<Contact />} />
+        <Route path='confirmation' element={<Home />} />
         <Route path='*' element={<Error />} />
       </Routes>
     </Router>

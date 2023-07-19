@@ -23,7 +23,8 @@ export default function Home() {
 	<div className="test">
 		<div className="test_title">
 			<Fade left cascade>
-		TEST
+			<h1>Testimonials</h1>
+			
 		</Fade>
 		</div>
 		

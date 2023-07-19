@@ -1,28 +1,22 @@
 import React from "react";
+import { faGoogle, faLinkedin, faGithubSquare, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 export default function About() {
   return (
-    <section class="home">
+ 
    
-    <div class="test">
-       
-			<h2 class="myH2">What is this ?</h2>
-			<p class="myP">This is a responsive fixed navbar animated on scroll</p>
-			<p class="myP">I took inspiration from  ABDO STEIF (<a href="https://codepen.io/abdosteif/pen/bRoyMb?editors=1100">https://codepen.io/abdosteif/pen/bRoyMb?editors=1100</a>)
-			and Dicson <a href="https://codepen.io/dicson/pen/waKPgQ">(https://codepen.io/dicson/pen/waKPgQ)</a></p>
-			<p class="myP">I HOPE YOU FIND THIS USEFULL</p>
-			<p class="myP">Albi</p>
-				<p class="myP">
-				
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
-			</p>
-    </div>
- </section>
+   <div id="wrapper">
+  <div class="box-area">
+    <div id="box-front" class="box"><a href="mailto:nacim.sereir@gmail.com" class="button glow-button" target="_blank"><FontAwesomeIcon icon={faGoogle} style={{fontSize: "95px"}} /></a></div>
+    <div id="box-right" class="box"><a href="https://www.linkedin.com/in/nacim-sereir/" class="button glow-button" target="_blank"><FontAwesomeIcon icon={faLinkedin} style={{fontSize: "95px"}} /></a></div>
+    <div id="box-back" class="box"><a href="https://github.com/Sereir" class="button glow-button" target="_blank"><FontAwesomeIcon icon={faGithubSquare} style={{fontSize: "95px"}} /></a></div>
+    <div id="box-left" class="box"><a href="tel:+33 651684603" class="button glow-button" target="_blank"><FontAwesomeIcon icon={faWhatsapp} style={{fontSize: "95px"}} /></a></div>
+    <div id="box-bottom" class="box"></div>
+  </div>
+</div>
+
 
   );
 }
