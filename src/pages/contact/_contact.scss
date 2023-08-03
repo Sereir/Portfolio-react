@@ -1,0 +1,172 @@
+  .container-contact {
+  background-color: black;
+  height: 100vh;
+  }
+
+  .container-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+  }
+  
+  .form-email {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .label-email {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: white;
+  }
+  
+  .input-email {
+    padding: 5px;
+    font-size: 16px;
+    border-width: 1px;
+    border-color: #cccccc;
+    background-color: #ffffff;
+    color: #000000;
+    border-style: solid;
+    border-radius: 0px;
+    box-shadow: 0px 0px 5px rgba(66, 66, 66, 0.75);
+  }
+  
+  .textarea-email {
+    padding: 5px;
+    font-size: 16px;
+    border-width: 1px;
+    border-color: #cccccc;
+    background-color: #ffffff;
+    color: #000000;
+    border-style: solid;
+    border-radius: 0px;
+    box-shadow: 0px 0px 5px rgba(66, 66, 66, 0.75);
+    resize: none;
+    height: 270px;
+  }
+  
+  .input-email:focus {
+    outline: none;
+  }
+  
+  .textarea-email:focus {
+    outline: none;
+  }
+  
+  .button-contact {
+    margin-top: 10px;
+    background-color: #44c767;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 14px;
+    padding: 13px 31px;
+    text-decoration: none;
+  }
+  
+  .button-contact:hover {
+    background-color: #5cbf2a;
+  }
+  
+  .button-contact:active {
+    position: relative;
+    outline: none;
+    top: 1px;
+  }
+
+  /* animation */
+
+  #wrapper {
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    perspective: 1500px;
+  }
+  
+  .box-area {
+    position: relative;
+    transform-style: preserve-3d;
+    animation-name: rotate;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate3d(0, 0, 0, 0);
+    }
+    100% {
+      transform: rotate3d(0, 1, 0, 360deg);
+    }
+  }
+  
+  .box {
+    position: fixed;
+    width: 240px;
+    height: 240px;
+    border: 2px solid #26262600;
+  }
+  
+  #box-front {
+    transform: translateX(-120px) translateY(-120px) translateZ(120px);
+    background: rgba(255, 16, 108, 0);
+  }
+  
+  #box-back {
+    transform: translateX(-120px) translateY(-120px) translateZ(-120px);
+    background: rgba(1, 251, 234, 0);
+  }
+  
+  #box-right {
+    transform: translateY(-120px) rotateY(90deg);
+    background: rgba(4, 255, 117, 0);
+  }
+  
+  #box-left {
+    transform: translateY(-120px) translateX(-240px) rotateY(90deg);
+    background: rgba(217, 255, 0, 0);
+  }
+  
+  #box-top {
+    transform: translateX(-120px) translateY(-240px) rotateX(90deg);
+    background: rgba(0, 4, 246, 0);
+  }
+  
+  #box-bottom {
+    transform: translateX(-120px) rotateX(90deg);
+    background: rgba(255, 196, 0, 0.237);
+    border-radius: 2px;
+    box-shadow: 0 20px 30px hsl(44, 80%, 47%);
+    filter: blur(100px);
+    border: 1px solid #d5c30000;
+  }
+  
+  .box-area {
+    transform: rotateX(90deg) rotateY(90deg);
+  }
+
+  .button {
+    text-decoration: none;
+    color: #e5e2d7;
+    background: rgba(244, 191, 1, 0.272);
+    padding: 128px 78px 100px;
+    border-radius: 2px;
+    border: 3px solid #ffffff;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .glow-button:hover {
+    background-color: #e5e2d7;
+    color: hsl(44, 80%, 47%);
+    box-shadow: 0 20px 30px rgba(252, 243, 207, 0.6);
+  }
