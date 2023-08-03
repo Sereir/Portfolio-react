@@ -6,6 +6,7 @@ function About() {
   return (
     <div className="test">
       <Particles />
+      <Technologies />
     </div>
   );
 }
